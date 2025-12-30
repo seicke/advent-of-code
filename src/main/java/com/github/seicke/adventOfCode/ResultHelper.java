@@ -12,4 +12,14 @@ public class ResultHelper {
 
 	}
 
+	public static String suffix(long actual, long expected) {
+
+		if (actual == expected) {
+			return "✓";
+		}
+
+		return String.format("(%s, should be %s)", (actual > expected ? "too high" : "too low"), expected);
+
+	}
+
 }

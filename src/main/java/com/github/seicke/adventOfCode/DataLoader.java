@@ -48,6 +48,20 @@ public class DataLoader {
 
 	}
 
+	public static String getString(int year, int day, boolean useExampleData) {
+
+		return getString(year, day, useExampleData, "");
+
+	}
+
+	public static String getString(int year, int day, boolean useExampleData, String lineDelimiter) {
+
+		List<String> lines = getStringLines(year, day, useExampleData);
+
+		return String.join(lineDelimiter, lines);
+
+	}
+
 	private static String determineDataFile(int year, int day, boolean useExampleData) {
 
 		String filename = String.format("%4d/Day%02d_%sData.txt", year, day, useExampleData ? "Example" : "");
