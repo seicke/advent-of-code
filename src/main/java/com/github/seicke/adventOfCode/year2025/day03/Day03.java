@@ -45,10 +45,10 @@ public class Day03 {
                                 .mapToLong(Long::longValue).sum();
 
                 System.out.println(String.format("Test Case Part1: Answer '%s' %s", answer_part1,
-                                ResultHelper.suffix(answer_part1, TEST_ANSWER_PART1))); // 17430
+                                ResultHelper.suffix(answer_part1, TEST_ANSWER_PART1)));
 
                 System.out.println(String.format("Test Case Part2: Answer '%s' %s", answer_part2,
-                                ResultHelper.suffix(answer_part2, TEST_ANSWER_PART2))); // 171975854269367
+                                ResultHelper.suffix(answer_part2, TEST_ANSWER_PART2))); 
         }
 
         private static void riddle() {

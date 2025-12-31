@@ -23,8 +23,6 @@ public class Day01 {
 
 	public static void main(String[] args) {
 
-		System.out.println(Day01.class);
-
 		test();
 
 		System.out.println();
