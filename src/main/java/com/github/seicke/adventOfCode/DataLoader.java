@@ -62,6 +62,19 @@ public class DataLoader {
 
 	}
 
+	public static char[][] getCharArray(int year, int day, boolean useExampleData) {
+
+		List<String> lines = getStringLines(year, day, useExampleData);
+
+		char[][] charArray = new char[lines.size()][];
+		for (int i = 0; i < lines.size(); i++) {
+			charArray[i] = lines.get(i).toCharArray();
+		}
+
+		return charArray;
+
+	}
+
 	private static String determineDataFile(int year, int day, boolean useExampleData) {
 
 		String filename = String.format("year%4d/day%02d/Day%02d_%sData.txt", year, day, day,
