@@ -64,7 +64,8 @@ public class DataLoader {
 
 	private static String determineDataFile(int year, int day, boolean useExampleData) {
 
-		String filename = String.format("%4d/Day%02d_%sData.txt", year, day, useExampleData ? "Example" : "");
+		String filename = String.format("year%4d/day%02d/Day%02d_%sData.txt", year, day, day,
+				useExampleData ? "Example" : "");
 
 		return filename;
 	}
