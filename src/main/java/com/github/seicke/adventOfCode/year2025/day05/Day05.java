@@ -23,15 +23,15 @@ public class Day05 {
 
     public static void main(String[] args) {
 
-        test();
+        puzzle_test();
 
         System.out.println();
 
-        riddle();
+        puzzle();
 
     }
 
-    private static void test() {
+    private static void puzzle_test() {
 
         List<String> lines = DataLoader.getStringLines(year, day, true);
 
@@ -46,7 +46,7 @@ public class Day05 {
 
     }
 
-    private static void riddle() {
+    private static void puzzle() {
 
         List<String> lines = DataLoader.getStringLines(year, day, false);
 

@@ -23,15 +23,15 @@ public class Day01 {
 
 	public static void main(String[] args) {
 
-		test();
+		puzzle_test();
 
 		System.out.println();
 
-		riddle();
+		puzzle();
 
 	}
 
-	private static void test() {
+	private static void puzzle_test() {
 
 		List<String> rotations = DataLoader.getStringLines(year, day, true);
 
@@ -44,7 +44,7 @@ public class Day01 {
 				ResultHelper.suffix(rotationResult[1], TEST_ANSWER_PART2)));
 	}
 
-	private static void riddle() {
+	private static void puzzle() {
 
 		List<String> rotations = DataLoader.getStringLines(year, day, false);
 

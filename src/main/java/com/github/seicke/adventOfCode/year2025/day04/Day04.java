@@ -21,15 +21,15 @@ public class Day04 {
 
     public static void main(String[] args) {
 
-        test();
+        puzzle_test();
 
         System.out.println();
 
-        riddle();
+        puzzle();
 
     }
 
-    private static void test() {
+    private static void puzzle_test() {
 
         char[][] paperRollsGrid = DataLoader.getCharArray(year, day, true);
 
@@ -44,7 +44,7 @@ public class Day04 {
 
     }
 
-    private static void riddle() {
+    private static void puzzle() {
 
         char[][] paperRollsGrid = DataLoader.getCharArray(year, day, false);
 

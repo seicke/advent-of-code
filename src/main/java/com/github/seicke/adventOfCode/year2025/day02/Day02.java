@@ -23,15 +23,15 @@ public class Day02 {
 
 	public static void main(String[] args) {
 
-		test();
+		puzzle_test();
 
 		System.out.println();
 
-		riddle();
+		puzzle();
 
 	}
 
-	private static void test() {
+	private static void puzzle_test() {
 
 		String[] idRanges = Arrays.stream(DataLoader.getString(year, day, true).split(",")).map(String::trim)
 				.toArray(String[]::new);
@@ -45,7 +45,7 @@ public class Day02 {
 				ResultHelper.suffix(result[1], TEST_ANSWER_PART2)));
 	}
 
-	private static void riddle() {
+	private static void puzzle() {
 
 		String[] idRanges = Arrays.stream(DataLoader.getString(year, day, false).split(",")).map(String::trim)
 				.toArray(String[]::new);

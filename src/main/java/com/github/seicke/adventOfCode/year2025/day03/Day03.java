@@ -23,15 +23,15 @@ public class Day03 {
 
         public static void main(String[] args) {
 
-                test();
+                puzzle_test();
 
                 System.out.println();
 
-                riddle();
+                puzzle();
 
         }
 
-        private static void test() {
+        private static void puzzle_test() {
 
                 List<String> batteryBanks = DataLoader.getStringLines(year, day, true);
 
@@ -48,10 +48,10 @@ public class Day03 {
                                 ResultHelper.suffix(answer_part1, TEST_ANSWER_PART1)));
 
                 System.out.println(String.format("Test Case Part2: Answer '%s' %s", answer_part2,
-                                ResultHelper.suffix(answer_part2, TEST_ANSWER_PART2))); 
+                                ResultHelper.suffix(answer_part2, TEST_ANSWER_PART2)));
         }
 
-        private static void riddle() {
+        private static void puzzle() {
 
                 List<String> batteryBanks = DataLoader.getStringLines(year, day, false);
 
